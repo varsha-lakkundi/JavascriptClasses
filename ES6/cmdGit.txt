@@ -2,5 +2,5 @@ git status
 git add filename
 git commit -m "check in message"
 git push origin branch name
-=====================================================
+========================================================
 git checkout -b "branch name" // to create new branch
