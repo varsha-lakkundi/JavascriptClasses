@@ -1,0 +1,2 @@
+git remote add origin https://github.com/varsha-lakkundi/JavascriptClasses.git
+git push -u origin master
