@@ -121,6 +121,9 @@ const id = 2;
 let arrOfEmp = emp.filter(h => h.isEmployee == true && h.id == id );
 console.log(arrOfEmp);
 
+let getId = emp.find(h => h.id == 6);
+console.log(getId);
+
 const isOfAge41 = emp.some((item, index, arr) => item.age > 41); // some returns boolean value based on condition given, it will stop executing once the condition is met and would not complete the loop
 console.log(isOfAge41);
 
@@ -154,10 +157,17 @@ const spliceRtn = copyEmp.splice(0, 2);
 console.log('spliced Emp:', spliceRtn, 'copied emp org:', copyEmp, 'emp org', emp );
 
 
-const enteredData = emp.entries();
-for(data of enteredData) {
-console.log(data, 'emp entries');
-}
+// const enteredData = emp.entries();
+// for(data of enteredData) {
+// console.log(data, 'emp entries');
+// }
+
+// console.table(emp);
+console.warn('This is console warning!!');
+console.info('We are consoling');
+console.error('You are under error!');
+
+
 
 
 
