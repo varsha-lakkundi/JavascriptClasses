@@ -114,12 +114,21 @@ let emp = [{
 },
 {
     name: 'swaraj', id: 6, isEmployee: true, age: 40
-}];
+},
+{
+    name: 'varsha', id: 7, isEmployee: true, age: 25
+},
+{
+    name: 'varsha', id: 8, isEmployee: true, age: 25
+},];
 
 const id = 2;
 
-let arrOfEmp = emp.filter(h => h.isEmployee == true && h.id == id );
+let arrOfEmp = emp.filter(h => h.isEmployee == true && h.id == id ).map(el => el.name)
 console.log(arrOfEmp);
+
+let getEmpId = emp.filter(h => h.name == 'varsha').map(el => el.id)
+console.log('emp id', getEmpId);
 
 let getId = emp.find(h => h.id == 6);
 console.log(getId);

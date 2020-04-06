@@ -8,3 +8,38 @@ p {
     transition: 1s linear all;
 
 }
+
+h3 {
+    position: relative;
+}
+
+h3 div {
+    transition: 0.3s ease-out all;
+    position: absolute;
+    margin-bottom:10px;
+    left: 0;
+    bottom: 100%;
+    background: lightgray;
+    padding: 8px;
+    font-size: 13px;
+    opacity: 0;
+}
+
+/* hover h3 */
+h3:hover div {
+        transition: 0.3s ease-in all;
+        opacity: 1;
+}
+
+h3 div::before {
+    content: '';
+    position: absolute;
+    border: 8px solid lightgrey;
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+    border-right-color: transparent;
+    bottom: -100%;
+    left: 0;
+    margin-bottom: 15px;
+
+}
